@@ -9,11 +9,13 @@
 
 ## Script:
 ```lua
-local _1_ = loadstring(game:HttpGetAsync("https://github.com/richie0866/rbxm-suite/releases/latest/download/rbxm-suite.lua"))()
+local v1, v2, v3 = 'AltLexon', 'Ninja-Legends', 'Script.lua'
 
-local _2_ = _1_.download(string.format("AltLexon/Ninja-Legends@v%s", '1.0.1'), "Project.rbxm")
+local v4, v5 = string.format, loadstring
 
-_1_.launch(_2_)
+local v6 = v4('https://raw.githubusercontent.com/%s/%s/master/%s', v1, v2, v3)
+
+v5(game:HttpGetAsync(v6))()
 ```
 
 ### Made By ***AltLexon***
